@@ -8,7 +8,7 @@ import Loader from "../../../Components/general.components/Loader";
 const MainPage = lazy(
 	() => import("../../../Pages/Main.page")
 );
-
+//dsfdfdfdfdfdfdfdfdfdfdf
 const shopRoutes: RouteObject[] = [
 	{
 		path: RoutesPaths.MAIN,
