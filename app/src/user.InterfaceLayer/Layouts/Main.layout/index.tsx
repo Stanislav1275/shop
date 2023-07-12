@@ -1,16 +1,19 @@
-import React, { FC } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, {FC} from "react";
+import {Outlet} from "react-router-dom";
+
+import Header from "./general.components/Header";
+import Footer from "./general.components/Footer";
+import * as ST from "./styled";
+import Main from "./general.components/Main";
 
 const MainLayout: FC = () => (
-	<div>
-		<div>
-			<Link to={"/svyatoslavZhilin/last"}>last</Link>
-		</div>
-		<div>
-			<Link to={"/svyatoslavZhilin"}>main</Link>
-		</div>
-		Shop <Outlet />
-	</div>
+    <ST.MainLayout>
+        <Header/>
+        <Main>
+            <Outlet/>
+        </Main>
+        <Footer/>
+    </ST.MainLayout>
 );
 
 export default MainLayout;

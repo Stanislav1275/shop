@@ -7,15 +7,13 @@ import {
 // import { Component1 } from "test-lib";
 
 const MainPage: FC = () => {
-	// console.log(Component1);
-
 	// eslint-disable-next-line
-	const {data, isError,isLoading,isFetching, isSuccess} = useGetTodoQuery(
+	const {data = [], isError,isLoading,isFetching, isSuccess} = useGetTodoQuery(
 		{authToken:"", params : {id:"32"}} as Props);
 	// eslint-disable-next-line no-console
 	console.log(data);
 
-	return <div>SvyatoslavZhilinMainPage</div>;
+	return <div>main</div>;
 };
 
 export default MainPage;

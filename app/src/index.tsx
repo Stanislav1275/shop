@@ -14,6 +14,7 @@ import "user.InterfaceLayer/styles/default.css";
 import "user.InterfaceLayer/styles/global.css";
 import "user.InterfaceLayer/styles/scrollbar.css";
 import "user.InterfaceLayer/styles/fonts.css";
+import "macro-css";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 
