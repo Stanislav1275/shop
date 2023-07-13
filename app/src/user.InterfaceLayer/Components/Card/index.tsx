@@ -1,4 +1,5 @@
 import React, {FC} from "react";
+import ContentLoader from "react-content-loader";
 
 import activeFav from "./activeFav.png";
 import deactiveFav from "./deactiveFav.png";
@@ -60,3 +61,23 @@ const Card: FC<Props> = ({id,isGreenBtnSelected, isFavorite, category, descripti
     );
 };
 export default Card;
+export const SkeletonCard:FC = () => {
+    return (
+        <ST.Card>
+            <ContentLoader
+                speed={2}
+                width={187}
+                height={170}
+                viewBox="0 0 187 170"
+                backgroundColor="#f3f3f3"
+                foregroundColor="#c9c9c9"
+            >
+                <rect x="28" y="7" rx="17" ry="17" width="150" height="91" />
+                <rect x="29" y="105" rx="3" ry="3" width="150" height="15" />
+                <rect x="29" y="125" rx="3" ry="3" width="93" height="15" />
+                <rect x="28" y="144" rx="3" ry="3" width="80" height="19" />
+                <rect x="146" y="130" rx="3" ry="3" width="32" height="32" />
+            </ContentLoader>
+        </ST.Card>
+    );
+};

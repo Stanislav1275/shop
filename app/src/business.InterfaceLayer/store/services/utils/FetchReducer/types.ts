@@ -1,12 +1,10 @@
-import {ReactNode} from "react";
+import {FC, ReactNode} from "react";
+
 import {EFetchStatus} from "./index";
 
 export type IFetchReducerProps = {
     process:EFetchStatus;
-    Component:ReactNode;
+    Component:ReactNode | FC;
     data:any;
-    SkeletonContent:ReactNode|null
-}
-export type fetchType = {
-
+    SkeletonContent:ReactNode | FC
 }

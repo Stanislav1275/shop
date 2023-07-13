@@ -35,10 +35,11 @@ export const FavBlock = styled.div`
  x
 `;
 export const ImgBlock = styled.div`
-  img{
+  img,.skelet{
     max-width: 50px;
     max-height: 90px;
   }
+  
 `;
 export const DesBlock = styled.div`
 `;

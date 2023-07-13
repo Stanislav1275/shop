@@ -26,6 +26,7 @@
     "json-server": "^0.17.3",
     "lint-staged": "^13.2.2",
     "react": "^18.2.0",
+    "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-redux": "^8.1.1",
@@ -36,7 +37,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"json-server --watch src/business.InterfaceLayer/mock/db.json\" \"set PORT=3030 && react-scripts start\"",
+    "start": "concurrently \"json-server --delay 1000 --watch src/business.InterfaceLayer/mock/db.json\" \"set PORT=3030 && react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
