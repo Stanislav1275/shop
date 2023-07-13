@@ -11,6 +11,9 @@ const MainPage: FC = () => {
 		<ST.ImgBlock>
 			<img src={frog} alt="frog"/>
 		</ST.ImgBlock>
+		<div>
+			<h1>ds</h1>
+		</div>
 	</ST.MainPage>;
 };
 
