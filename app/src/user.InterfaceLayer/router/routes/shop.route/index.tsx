@@ -7,7 +7,7 @@ import Error from "../../../Components/general.components/Error";
 import Loader from "../../../Components/general.components/Loader";
 
 const MainPage = lazy(
-    () => import("../../../Pages/Main.page")
+    () => import("../../../Pages/Main.page.allCards")
 );
 const shopRoutes: RouteObject[] = [
     {
