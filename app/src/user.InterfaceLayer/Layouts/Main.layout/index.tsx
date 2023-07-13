@@ -5,7 +5,7 @@ import frog from "./frog.png";
 import Header from "./general.components/Header";
 import * as ST from "./styled";
 import Main from "./general.components/Main";
-import Navigate from "../../Components/Navigate";
+import Navigate from "../../Libraries/SvyatoslavZhilin.library/UI_KIT/Molecules/Navigate";
 import * as GLST from "../../Components/styled";
 
 const MainLayout: FC = () => {

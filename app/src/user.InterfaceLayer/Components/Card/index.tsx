@@ -1,10 +1,10 @@
 import React, {FC} from "react";
 import ContentLoader from "react-content-loader";
 
-import activeFav from "./activeFav.png";
-import deactiveFav from "./deactiveFav.png";
-import added from "./added.svg";
-import unadded from "./unadded.svg";
+import activeFav from "../../Libraries/SvyatoslavZhilin.library/assets/icons/activeFav.png";
+import deactiveFav from "../../Libraries/SvyatoslavZhilin.library/assets/icons/deactiveFav.png";
+import added from "../../Libraries/SvyatoslavZhilin.library/assets/icons/added.svg";
+import unadded from "../../Libraries/SvyatoslavZhilin.library/assets/icons/unadded.svg";
 import * as ST from "./styled";
 // import fav  from "../../Layouts/Main.layout/general.components/Header/assets/favorite.svg";
 

@@ -25,14 +25,14 @@ export const FavBlock = styled.div`
   align-self: flex-start;
   width: 32px;
   height: 32px;
-  background-image: url(deactiveFav.png) !important;
-  
+  background-image: url(../../Libraries/SvyatoslavZhilin.library/assets/icons/deactiveFav.png) !important;
+
   //background: url("activeFav.png") red;
   //background-color: red;
   //&>button{
   //  background: url("activeFav.png");
   //}
- x
+  x
 `;
 export const ImgBlock = styled.div`
   img,.skelet{
