@@ -2,8 +2,8 @@ import React, {FC} from "react";
 
 // import frog from "./frog.png";
 import * as ST from "./styled";
-import CardList from "../../Components/CardList";
-// import * as GLST from "../../Components/styled";
+import CardList from "../../Components/CardList.hoc";
+
 
 const MainPage: FC = () => {
     // eslint-disable-next-line no-console
@@ -11,7 +11,7 @@ const MainPage: FC = () => {
     return <ST.MainPage>
 
 
-        <CardList/>
+       <CardList/>
     </ST.MainPage>;
 };
 

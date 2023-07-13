@@ -15,7 +15,7 @@ export interface IProduct {
 	[EProduct.description]: string;
 	[EProduct.category]: string;
 	[EProduct.thumbnail]: string;
-	[EProduct.price]: string;
+	[EProduct.price]: number;
 
 }
 

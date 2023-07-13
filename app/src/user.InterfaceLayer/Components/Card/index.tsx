@@ -13,9 +13,11 @@ type Props = {
     category: string,
     description: string,
     price: number,
-    thumbnail: string
+    thumbnail: string,
+    id:string
 }
-const Card: FC<Props> = ({isGreenBtnSelected, isFavorite, category, description, price, thumbnail}) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Card: FC<Props> = ({id,isGreenBtnSelected, isFavorite, category, description, price, thumbnail}) => {
     return (
         <ST.Card>
             <ST.FavBlock>
