@@ -4,7 +4,7 @@ import {EFetchStatus} from "./index";
 
 export type IFetchReducerProps = {
     process:EFetchStatus;
-    Component:ReactNode | FC;
+    Component:JSX.Element | FC;
     data:any;
     SkeletonContent:ReactNode | FC
 }

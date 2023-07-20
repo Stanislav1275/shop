@@ -1,15 +1,14 @@
 import React, {FC} from "react";
 
-import * as ST from "./styled";
 type Props = {
     src:any,
     alt?:string
-    width:string,
-    height:string
+    width?:string,
+    height?:string
 }
-const Image:FC<Props> = ({src, alt}) => {
+const Image:FC<Props> = ({src="", alt="non",width="32px", height="32px"}) => {
     return (
-        <img src={src} alt={alt}/>
+        <img style = {{width, height}} src={src} alt={alt}/>
     );
 };
 export default Image;

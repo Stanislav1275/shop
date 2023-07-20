@@ -13,7 +13,12 @@ export enum EFetchStatus {
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const FetchReducer : FC<IFetchReducerProps> = ({process, Component, SkeletonContent, data}) => {
+export const FetchReducer : FC<IFetchReducerProps> = ({
+                                                          process,
+                                                          Component,
+                                                          SkeletonContent,
+                                                          data
+}) => {
     // eslint-disable-next-line no-console
     console.log(process);
     switch (process){
@@ -28,19 +33,12 @@ export const FetchReducer : FC<IFetchReducerProps> = ({process, Component, Skele
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
                 return <Component {...data}/>;
-
             }
         }
         case EFetchStatus.isError:{
             return <Error/>;
         }
         case EFetchStatus.isSuccess:{
-
-            // eslint-disable-next-line @typescript-eslint/no-empty-function
-            setTimeout(()=> {
-
-            },1000);
-
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             return <Component {...data}/>;

@@ -6,6 +6,5 @@ module.exports = {
 	useTabs: true,
 	printWidth: 80,
 	endOfLine: "crlf",
-	
 };
 

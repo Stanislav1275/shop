@@ -20,7 +20,6 @@ export const todoApi = createApi({
 		baseUrl: process.env.REACT_APP_API_URL,
 	}),
 	tagTypes: [`${reducerPaths.todo}TAG`],
-
 	endpoints: (build) => ({
 		getTodo: build.query<any, Props>({
 			query: ({ authToken, params }) => ({
@@ -30,6 +29,7 @@ export const todoApi = createApi({
 					Authorization: `Bearer ${authToken}`,
 				},
 				params: params,
+
 				validateStatus,
 			}),
 			providesTags: [`${reducerPaths.todo}TAG`],
@@ -37,5 +37,6 @@ export const todoApi = createApi({
 		}),
 	}),
 });
-
-export const { useGetTodoQuery } = todoApi;
+export const { useGetTodoQuery,useLazyGetTodoQuery	 } = todoApi;
+//useLazyGet - async await
+//mutation

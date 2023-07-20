@@ -12,6 +12,8 @@ const CardList: FC = () => {
     // eslint-disable-next-line no-console
     console.log(data);
 
+//component.bll
+    //проект
     return (<ST.CardList>
         {
             <FetchReducer
@@ -24,9 +26,10 @@ const CardList: FC = () => {
                         isUninitialized
                     })
                 }
-                Component={CardListUi as FC<any>}
+                Component={CardListUi}
+                //children!!!
                 data={{products:data}}
-                SkeletonContent={CardListSkelet as FC<any>}
+                SkeletonContent={CardListSkelet}
             />
         }
     </ST.CardList>);
